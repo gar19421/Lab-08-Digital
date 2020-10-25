@@ -53,9 +53,7 @@ end
 
 initial begin//test del ALU
     #60
-    $display("\n");
-    $display(" ALU ");
-    $display("\n");
+    $display(" \nALU ");
     $display(" A        B    | F   |  Y ");
     $display(" ----------------------------");
     $monitor(" %b    %b  | %b |  %b ", A, B, F, salida_2);

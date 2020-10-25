@@ -11,7 +11,7 @@ module Counter(input wire clk, reset, enable, load,  output reg[11:0] count);
         #2 count <= count + 12'd1; // si esta en enable cuenta el contador sino no cuenta
     end
     else if(clk & load & enable) begin
-        #2 count <= 12'd34; //precargando que empiece en 34 base 10
+        #2 count <= 12'd34; //precargando el valor
     end
   end
 
